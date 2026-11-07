@@ -4,36 +4,16 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Fundación Territorial SHAMUY</title>
-<meta name="description" content="Fundación Territorial SHAMUY: articulamos actores e iniciativas para el desarrollo sostenible de la región San Martín, Perú. ¡Juntos lo hacemos!">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
 <style>
-/* CSS base original */
-:root{
-  --l-red:#F9362A; --l-orange:#FCB749; --l-yellow:#FECF4D; --l-purple:#9378D7; --l-blue:#377EDC; --l-green:#67B48D;
-  --blue:#1F5FC4; --green:#1E7F5A; --red:#D42A1F; --purple:#6F55B8;
-  --cedar:#006BB6; --cedar-2:#14945F; --conecta:#8A4CA0; --conecta-2:#3E9B47; --conecta-3:#E2457E;
-  --accent:var(--blue); --accent-ink:var(--blue); --accent-soft:#E8F0FC;
-  --paper:#FFFFFF; --mist:#F4F6F9; --line:#E0E5EC;
-  --ink:#17181C; --text:#30343C; --muted:#5E6573;
-  --deep:#15171D; --on-deep:#FFFFFF; --on-deep-2:#C5CAD3;
-  --prov:#B4570A; --prov-soft:#FFF2E2;
-  --r-s:8px; --r-l:20px; --wrap:1200px;
-  --display:"Outfit","Segoe UI",system-ui,sans-serif;
-  --body:"Source Sans 3","Segoe UI",system-ui,-apple-system,sans-serif;
-  color-scheme:light; box-sizing:border-box;
-  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
-}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
-  --paper:#111318; --mist:#191C23; --line:#2A2F3A; --ink:#F2F4F7; --text:#D3D8E0; --muted:#9AA3B2;
-  --blue:#7AA8F0; --green:#5CC79A; --purple:#A994E6; --cedar:#5FA8E6; --conecta:#C08AD6;
-  --accent-soft:#1C2740; --deep:#0B0C10; --prov:#FFB566; --prov-soft:#3A2810; color-scheme:dark}}
+/* CSS BASE ORIGINAL RESTAURADO */
+:root{ --l-red:#F9362A; --l-orange:#FCB749; --l-yellow:#FECF4D; --l-purple:#9378D7; --l-blue:#377EDC; --l-green:#67B48D; --blue:#1F5FC4; --green:#1E7F5A; --red:#D42A1F; --purple:#6F55B8; --cedar:#006BB6; --cedar-2:#14945F; --conecta:#8A4CA0; --conecta-2:#3E9B47; --conecta-3:#E2457E; --accent:var(--blue); --accent-ink:var(--blue); --accent-soft:#E8F0FC; --paper:#FFFFFF; --mist:#F4F6F9; --line:#E0E5EC; --ink:#17181C; --text:#30343C; --muted:#5E6573; --deep:#15171D; --on-deep:#FFFFFF; --on-deep-2:#C5CAD3; color-scheme:light; box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){ --paper:#111318; --mist:#191C23; --line:#2A2F3A; --ink:#F2F4F7; --text:#D3D8E0; --muted:#9AA3B2; --blue:#7AA8F0; --green:#5CC79A; --purple:#A994E6; --cedar:#5FA8E6; --conecta:#C08AD6; --deep:#0B0C10; color-scheme:dark}}
 *,*::before,*::after{box-sizing:inherit}
 html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 90px)}
 body{margin:0;background:var(--paper);color:var(--text);font-family:var(--body);font-size:1.0625rem;line-height:1.6;-webkit-font-smoothing:antialiased}
-body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--paper)}
-img{max-width:100%;display:block}
 a{color:var(--accent-ink)}
 h1,h2,h3,h4{font-family:var(--display);color:var(--ink);line-height:1.1;margin:0 0 .5em;letter-spacing:-.015em}
 h1{font-size:clamp(2.4rem,5.6vw,4.4rem);font-weight:800;letter-spacing:-.03em}
@@ -41,166 +21,146 @@ h2{font-size:clamp(1.75rem,3.2vw,2.6rem);font-weight:700}
 h3{font-size:1.28rem;font-weight:700}
 p{margin:0 0 1em;max-width:68ch}
 .wrap{max-width:var(--wrap);margin:0 auto;padding:0 clamp(18px,4vw,40px)}
-:focus-visible{outline:3px solid var(--l-blue);outline-offset:3px;border-radius:4px}
-.tbd{color:var(--muted);font-style:italic}
 header.site{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:color-mix(in srgb,var(--paper) 93%,transparent);backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line)}
 .head{display:flex;align-items:center;gap:18px;height:78px}
 .brand{display:flex;align-items:center;margin-right:auto;text-decoration:none}
-.brand img{height:54px;width:auto}
 .brand .dk{display:flex;align-items:center;gap:10px}
 .brand .dk b{font-family:var(--display);font-weight:800;font-size:1.35rem;color:var(--ink);line-height:1}
 .brand .dk small{display:block;font-size:.72rem;letter-spacing:.08em;color:var(--muted)}
 nav.main ul{list-style:none;margin:0;padding:0;display:flex;gap:2px}
 nav.main a{display:block;text-decoration:none;color:var(--text);font-weight:600;font-size:.98rem;padding:8px 11px;border-radius:var(--r-s)}
-nav.main a:hover{color:var(--ink);background:var(--mist)}
-.btn{display:inline-flex;align-items:center;gap:8px;font:600 1rem/1 var(--body);text-decoration:none;border-radius:999px;padding:13px 22px;border:2px solid transparent;cursor:pointer;transition:background .15s,color .15s,border-color .15s}
+nav.main a:hover, nav.main a.active{color:var(--ink);background:var(--mist)}
+.btn{display:inline-flex;align-items:center;gap:8px;font:600 1rem/1 var(--body);text-decoration:none;border-radius:999px;padding:13px 22px;border:2px solid transparent;cursor:pointer;}
 .btn-main{background:var(--accent);color:#fff}
-.btn-main:hover{filter:brightness(.9)}
 .btn-line{border-color:currentColor;color:var(--ink);background:transparent}
-.btn-line:hover{background:var(--mist)}
-.deep .btn-line{color:#fff}.deep .btn-line:hover{background:rgba(255,255,255,.1)}
 .btn-sm{padding:10px 18px;font-size:.95rem}
 section{padding:clamp(56px,8vw,104px) 0}
 .alt{background:var(--mist)}
 .deep{background:var(--deep);color:var(--on-deep-2)}
-.deep h1,.deep h2,.deep h3{color:var(--on-deep)}
+.deep h1,.deep h2{color:var(--on-deep)}
 .lede{font-size:1.2rem;line-height:1.55}
-.deep .lede{color:var(--on-deep-2)}
 .sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:34px}
-.sec-head h2{margin:0}.sec-head p{margin:.5em 0 0;color:var(--muted)}
 .grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(24px,4vw,56px)}
 .grid-4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
-@media (max-width:880px){.grid-2{grid-template-columns:1fr}.grid-4{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media (max-width:480px){.grid-4{grid-template-columns:1fr}}
 .photo{margin:0;border-radius:var(--r-l);overflow:hidden;background:var(--mist);position:relative}
 .photo img{width:100%;height:100%;object-fit:cover}
 .noimg{border-radius:var(--r-l);background:var(--mist);display:grid;place-items:center;border:1px solid var(--line)}
-.topo{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
-.topo path{fill:none;stroke-width:1.3;vector-effect:non-scaling-stroke}
-.draw .topo path{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 2.4s cubic-bezier(.3,.6,.2,1) forwards}
-@keyframes draw{to{stroke-dashoffset:0}}
 .hero{position:relative;overflow:hidden;padding:clamp(40px,6vw,84px) 0 clamp(56px,7vw,96px)}
 .hero-in{position:relative;display:grid;grid-template-columns:1fr 1.05fr;gap:clamp(28px,5vw,64px);align-items:center}
-.hero h1{max-width:11ch}
-.hero .lede{max-width:44ch;margin-bottom:28px}
-.hero .photo{aspect-ratio:5/4;box-shadow:0 30px 60px -30px rgba(20,30,60,.45)}
 .tagline{font-family:var(--display);font-weight:700;font-size:1.15rem;color:var(--green);margin-bottom:14px}
 .actions{display:flex;gap:12px;flex-wrap:wrap}
-@media (max-width:880px){.hero-in{grid-template-columns:1fr}.hero .photo{aspect-ratio:16/10}}
 .proj{display:grid;grid-template-columns:1.05fr 1fr;border-radius:var(--r-l);overflow:hidden;background:var(--paper);border:1px solid var(--line);margin-bottom:26px;text-decoration:none;color:inherit}
-.proj:hover h3{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:4px}
 .proj .photo{border-radius:0;min-height:300px}
-.proj-body{padding:clamp(24px,4vw,44px);border-top:6px solid var(--pc);display:flex;flex-direction:column;gap:14px}
-.proj-body p{margin:0}
+.proj-body{padding:clamp(24px,4vw,44px);border-top:6px solid var(--blue);display:flex;flex-direction:column;gap:14px}
 .tagrow{display:flex;gap:8px;flex-wrap:wrap}
 .tag{font-size:.84rem;font-weight:600;border-radius:999px;padding:3px 11px;background:var(--mist);color:var(--text);border:1px solid var(--line)}
-.proj .go{margin-top:auto;font-weight:700;color:var(--pc)}
-@media (max-width:880px){.proj{grid-template-columns:1fr}.proj .photo{min-height:220px}}
+.proj .go{margin-top:auto;font-weight:700;color:var(--blue)}
 .kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:2px solid var(--ink)}
 .kpi{padding:22px 18px 8px 0;border-right:1px solid var(--line);margin-right:18px}
-.kpi:nth-child(4n){border-right:0}
 .kpi .v{font-family:var(--display);font-weight:800;font-size:2.7rem;color:var(--ink);line-height:1}
 .kpi .l{font-weight:600;color:var(--ink);margin-top:10px;line-height:1.3}
-@media (max-width:880px){.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.kpi:nth-child(2n){border-right:0}}
-.mv{padding:30px;border-radius:var(--r-l);border-left:6px solid var(--c)}
-.mv p{font-size:1.15rem;margin:0;color:var(--ink)}
+.mv{padding:30px;border-radius:var(--r-l);border-left:6px solid var(--blue)}
 footer.site{background:var(--deep);color:var(--on-deep-2);padding:64px 0 40px;font-size:.96rem}
 footer.site h4{color:#fff;font-size:1rem;margin-bottom:12px}
 footer.site a{color:var(--on-deep-2);text-decoration:none}
-footer.site ul{list-style:none;margin:0;padding:0;display:grid;gap:7px}
 .foot{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:32px}
 .foot-brand{display:flex;gap:14px;align-items:center;margin-bottom:16px}
 .foot-brand b{font-family:var(--display);color:#fff;font-size:1.5rem;font-weight:800;display:block;line-height:1}
-.foot-bottom{margin-top:48px;padding-top:22px;border-top:1px solid #2E333E;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:.88rem}
-@media (max-width:880px){.foot{grid-template-columns:1fr 1fr}}
-@media (max-width:480px){.foot{grid-template-columns:1fr}}
+.foot-bottom{margin-top:48px;padding-top:22px;border-top:1px solid #2E333E;display:flex;justify-content:space-between;font-size:.88rem}
+
+/* Estilos para el ruteador (SPA) */
+.page-section { display: none; }
+.page-section.active { display: block; animation: fadeIn 0.4s; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 </style>
 </head>
 <body class="clean">
+
+<!-- MENÚ DE NAVEGACIÓN -->
 <header class="site">
   <div class="wrap head">
     <a class="brand" href="#/"><span class="dk"><b>SHAMUY</b><small>FUNDACIÓN TERRITORIAL</small></span></a>
-    <nav class="main" id="mainNav"><ul>
-      <li><a href="#/">Inicio</a></li><li><a href="#/nosotros">Nosotros</a></li><li><a href="#/proyectos">Proyectos</a></li>
-      <li><a href="#/impacto">Impacto</a></li><li><a href="#/actualidad">Actualidad</a></li><li><a href="#/transparencia">Transparencia</a></li><li><a href="#/contacto">Contacto</a></li>
-    </ul></nav>
-    <a class="btn btn-main btn-sm" id="edit-hero-btn-nav" href="#/contacto">Súmate</a>
+    <nav class="main" id="mainNav">
+      <ul>
+        <li><a href="#/" class="nav-link">Inicio</a></li>
+        <li><a href="#/nosotros" class="nav-link">Nosotros</a></li>
+        <li><a href="#/proyectos" class="nav-link">Proyectos</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-main btn-sm" href="#/contacto">Súmate</a>
   </div>
 </header>
 
 <main id="main">
-  <!-- SECCIÓN HERO DINÁMICA -->
-  <section class="hero deep">
-    <!-- SVG de curvas topográficas -->
-    <svg class="topo" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-      <path d="M-100 100 Q 200 50 500 200 T 1300 100" style="stroke:var(--l-orange); opacity:0.3"/>
-      <path d="M-100 150 Q 250 80 550 250 T 1300 150" style="stroke:var(--l-red); opacity:0.3"/>
-      <path d="M-100 200 Q 300 110 600 300 T 1300 200" style="stroke:var(--l-purple); opacity:0.3"/>
-      <path d="M-100 250 Q 350 140 650 350 T 1300 250" style="stroke:var(--l-blue); opacity:0.3"/>
-      <path d="M-100 300 Q 400 170 700 400 T 1300 300" style="stroke:var(--l-green); opacity:0.3"/>
-    </svg>
-    <div class="wrap hero-in">
-      <div>
-        <div class="tagline" id="edit-hero-tagline">Cargando...</div>
-        <h1 id="edit-hero-titulo">Cargando...</h1>
-        <p class="lede" id="edit-hero-desc">Cargando...</p>
-        <div class="actions">
-          <a id="edit-hero-btn" href="#" class="btn btn-main">...</a>
-          <a id="edit-hero-btn2" href="#" class="btn btn-line">...</a>
-        </div>
-      </div>
-      <div class="photo">
-        <img id="edit-hero-img" src="" alt="Portada SHAMUY">
-      </div>
-    </div>
-  </section>
 
-  <!-- SECCIÓN KPIS DINÁMICA -->
-  <section class="alt">
-    <div class="wrap">
-      <h2>Nuestro Impacto</h2>
-      <div class="kpis" id="edit-kpis">
-        <!-- Los KPIs se inyectan aquí mediante JS -->
-      </div>
-    </div>
-  </section>
-
-  <!-- SECCIÓN NOSOTROS DINÁMICA -->
-  <section>
-    <div class="wrap">
-      <div class="mv" style="--c: var(--blue)">
-        <p id="edit-nosotros-texto">Cargando visión institucional...</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- SECCIÓN NOTICIAS Y PROYECTOS DINÁMICOS -->
-  <section class="alt">
-    <div class="wrap">
-      <div class="sec-head">
+  <!-- =============================== -->
+  <!-- VISTA 1: INICIO                 -->
+  <!-- =============================== -->
+  <div id="view-inicio" class="page-section active">
+    <section class="hero deep">
+      <div class="wrap hero-in">
         <div>
-          <h2>Últimos Proyectos y Noticias</h2>
-          <p>Conoce los avances de nuestros proyectos en San Martín.</p>
+          <div class="tagline" id="edit-hero-tagline">Cargando...</div>
+          <h1 id="edit-hero-titulo">Cargando...</h1>
+          <p class="lede" id="edit-hero-desc">Cargando...</p>
+          <div class="actions">
+            <a id="edit-hero-btn" href="#" class="btn btn-main">Cargando...</a>
+            <a id="edit-hero-btn2" href="#" class="btn btn-line">Cargando...</a>
+          </div>
+        </div>
+        <div class="photo">
+          <img id="edit-hero-img" src="" alt="Portada SHAMUY">
         </div>
       </div>
-      <div class="grid-2" id="noticias-dinamicas">
-         <p class="tbd">Cargando proyectos...</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- SECCIÓN ALIADOS DINÁMICA -->
-  <section>
-    <div class="wrap">
-      <div class="sec-head">
-        <h2>Nuestras Alianzas</h2>
-        <a href="#/contacto" class="more">Súmate como aliado →</a>
+    <section class="alt">
+      <div class="wrap">
+        <h2>Nuestro Impacto</h2>
+        <div class="kpis" id="edit-kpis"></div>
       </div>
-      <div class="grid-4" id="edit-aliados">
-         <!-- Los logos de aliados se inyectan aquí -->
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="sec-head"><h2>Nuestras Alianzas</h2></div>
+        <div class="grid-4" id="edit-aliados"></div>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
+
+  <!-- =============================== -->
+  <!-- VISTA 2: NOSOTROS               -->
+  <!-- =============================== -->
+  <div id="view-nosotros" class="page-section">
+    <section>
+      <div class="wrap">
+        <h2>Sobre la Fundación</h2>
+        <div class="mv">
+          <p id="edit-nosotros-texto">Cargando visión institucional...</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- =============================== -->
+  <!-- VISTA 3: PROYECTOS Y NOTICIAS   -->
+  <!-- =============================== -->
+  <div id="view-proyectos" class="page-section">
+    <section class="alt">
+      <div class="wrap">
+        <div class="sec-head">
+          <div>
+            <h2>Proyectos y Noticias</h2>
+            <p>Conoce los avances en San Martín.</p>
+          </div>
+        </div>
+        <div class="grid-2" id="noticias-dinamicas">
+           <p class="tbd">Cargando proyectos...</p>
+        </div>
+      </div>
+    </section>
+  </div>
 
 </main>
 
@@ -210,21 +170,6 @@ footer.site ul{list-style:none;margin:0;padding:0;display:grid;gap:7px}
       <div>
         <div class="foot-brand"><b>SHAMUY</b></div>
         <p>Fundación Territorial promoviendo el desarrollo sostenible en San Martín, Perú.</p>
-      </div>
-      <div>
-        <h4>Proyectos</h4>
-        <ul>
-          <li><a href="#/proyectos/cedar">CEDAR SHAMUY</a></li>
-          <li><a href="#/proyectos/conecta">CONECTA</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Enlaces</h4>
-        <ul>
-          <li><a href="#/nosotros">Nosotros</a></li>
-          <li><a href="#/transparencia">Transparencia</a></li>
-          <li><a href="#/contacto">Contacto</a></li>
-        </ul>
       </div>
     </div>
     <div class="foot-bottom">
@@ -236,95 +181,103 @@ footer.site ul{list-style:none;margin:0;padding:0;display:grid;gap:7px}
 <script>
 document.addEventListener("DOMContentLoaded", () => {
   
-  // 1. CARGAR TEXTOS FIJOS (Hero, KPIs, Nosotros, Aliados)
+  /* -----------------------------------------------------
+     1. SISTEMA DE RUTAS (SPA) - RESTAURADO
+  ----------------------------------------------------- */
+  function navigate() {
+    const hash = window.location.hash || '#/';
+    
+    // Ocultar todas las vistas
+    document.querySelectorAll('.page-section').forEach(sec => {
+      sec.classList.remove('active');
+    });
+    // Quitar clase activa del menú
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.classList.remove('active');
+    });
+
+    // Mostrar la vista correcta según el enlace clickeado
+    if (hash === '#/') {
+      document.getElementById('view-inicio').classList.add('active');
+      document.querySelector('a[href="#/"]').classList.add('active');
+    } else if (hash === '#/nosotros') {
+      document.getElementById('view-nosotros').classList.add('active');
+      document.querySelector('a[href="#/nosotros"]').classList.add('active');
+    } else if (hash.startsWith('#/proyectos')) {
+      document.getElementById('view-proyectos').classList.add('active');
+      document.querySelector('a[href="#/proyectos"]').classList.add('active');
+    } else {
+      document.getElementById('view-inicio').classList.add('active');
+    }
+  }
+
+  window.addEventListener('hashchange', navigate);
+  navigate(); // Ejecutar al cargar la página
+
+
+  /* -----------------------------------------------------
+     2. CARGAR DATOS DEL CMS (Cloudflare/Decap)
+  ----------------------------------------------------- */
+  
+  // A. Textos Fijos (Inicio, KPIs, Nosotros)
   fetch('/contenido.json')
-    .then(response => {
-      if (!response.ok) throw new Error('No se encontró el archivo de contenido base');
-      return response.json();
-    })
+    .then(response => response.json())
     .then(data => {
-      // Inyectar datos en el Hero
       if(data.hero_tagline) document.getElementById('edit-hero-tagline').innerText = data.hero_tagline;
       if(data.hero_titulo) document.getElementById('edit-hero-titulo').innerText = data.hero_titulo;
       if(data.hero_descripcion) document.getElementById('edit-hero-desc').innerText = data.hero_descripcion;
       if(data.hero_img) document.getElementById('edit-hero-img').src = data.hero_img;
-      if(data.hero_btn_link) {
-          document.getElementById('edit-hero-btn').href = data.hero_btn_link;
-          document.getElementById('edit-hero-btn-nav').href = data.hero_btn_link;
-      }
+      
       if(data.hero_btn_texto) document.getElementById('edit-hero-btn').innerText = data.hero_btn_texto;
-      if(data.hero_btn2_link) document.getElementById('edit-hero-btn2').href = data.hero_btn2_link;
+      if(data.hero_btn_link) document.getElementById('edit-hero-btn').href = data.hero_btn_link;
       if(data.hero_btn2_texto) document.getElementById('edit-hero-btn2').innerText = data.hero_btn2_texto;
+      if(data.hero_btn2_link) document.getElementById('edit-hero-btn2').href = data.hero_btn2_link;
 
-      // Inyectar Misión/Visión
       if(data.nosotros_texto) document.getElementById('edit-nosotros-texto').innerText = data.nosotros_texto;
 
-      // Inyectar KPIs
       const kpisContainer = document.getElementById('edit-kpis');
-      if(data.kpis && data.kpis.length > 0) {
-        kpisContainer.innerHTML = ''; // Limpiar
+      if(data.kpis) {
+        kpisContainer.innerHTML = ''; 
         data.kpis.forEach(kpi => {
           kpisContainer.innerHTML += `<div class="kpi"><div class="v">${kpi.valor}</div><div class="l">${kpi.desc}</div></div>`;
         });
       }
 
-      // Inyectar Logos de Aliados
       const aliadosContainer = document.getElementById('edit-aliados');
-      if(data.aliados && data.aliados.length > 0) {
-        aliadosContainer.innerHTML = ''; // Limpiar
+      if(data.aliados) {
+        aliadosContainer.innerHTML = ''; 
         data.aliados.forEach(aliado => {
-          aliadosContainer.innerHTML += `
-            <div class="noimg" style="background: white; padding: 20px;">
-              <img src="${aliado.logo}" alt="${aliado.nombre}" style="width: 100%; height: auto; object-fit: contain; opacity: 1;">
-            </div>`;
+          aliadosContainer.innerHTML += `<div class="noimg" style="background:white; padding:20px;"><img src="${aliado.logo}" alt="${aliado.nombre}"></div>`;
         });
       }
-    })
-    .catch(error => console.log('Error cargando contenido base:', error));
+    }).catch(err => console.log('Error cargando contenido base:', err));
 
-  // 2. CARGAR NOTICIAS Y PROYECTOS DINÁMICOS
+
+  // B. Noticias y Proyectos Dinámicos
   fetch('/noticias.json')
-    .then(response => {
-      if (!response.ok) throw new Error('No hay noticias publicadas');
-      return response.json();
-    })
+    .then(response => response.json())
     .then(data => {
       const contenedor = document.getElementById('noticias-dinamicas');
-      
       if (data.items && data.items.length > 0) {
-        contenedor.innerHTML = ''; // Limpiar mensaje de carga
+        contenedor.innerHTML = '';
         data.items.forEach(item => {
-          // Determinar el color del tag basado en la categoría
-          let colorVar = '--blue';
-          if(item.categoria && item.categoria.toLowerCase().includes('cedar')) colorVar = '--cedar';
-          if(item.categoria && item.categoria.toLowerCase().includes('conecta')) colorVar = '--conecta';
-
           const html = `
             <a class="proj" href="${item.enlace || '#'}">
-              <div class="photo">
-                <img src="${item.imagen || ''}" alt="${item.title || 'Noticia'}">
-              </div>
-              <div class="proj-body" style="border-top-color: var(${colorVar})">
-                <div class="tagrow"><span class="tag" style="color: var(${colorVar}); border-color: var(${colorVar})">${item.categoria || 'Actualidad'}</span></div>
+              <div class="photo"><img src="${item.imagen || ''}" alt="Proyecto"></div>
+              <div class="proj-body">
+                <div class="tagrow"><span class="tag">${item.categoria || 'Actualidad'}</span></div>
                 <h3>${item.title || 'Sin Título'}</h3>
                 <p>${item.descripcion || ''}</p>
-                <span class="go" style="color: var(${colorVar})">Leer más →</span>
+                <span class="go">Leer más →</span>
               </div>
-            </a>
-          `;
+            </a>`;
           contenedor.innerHTML += html;
         });
-      } else {
-        contenedor.innerHTML = '<p class="tbd">Aún no hay noticias publicadas.</p>';
       }
-    })
-    .catch(error => {
-      console.log('Aviso:', error);
-      document.getElementById('noticias-dinamicas').innerHTML = '<p class="tbd">No hay noticias recientes.</p>';
+    }).catch(err => {
+      document.getElementById('noticias-dinamicas').innerHTML = '<p class="tbd">No hay noticias publicadas.</p>';
     });
 
-  // Animación del Hero (Clase para curvas topográficas)
-  setTimeout(() => document.body.classList.add('draw'), 100);
 });
 </script>
 </body>

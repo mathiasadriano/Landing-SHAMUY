@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: mathiasadriano/Landing-SHAMUY 
+  repo: mathiasadriano/Landing-SHAMUY
   branch: main
   base_url: /
   auth_endpoint: auth
@@ -16,29 +16,22 @@ collections:
         name: "inicio"
         file: "public/contenido.json"
         fields:
-          # --- SECCIÓN HERO ---
           - {label: "Tagline", name: "hero_tagline", widget: "string"}
-          - {label: "Título Principal (Hero)", name: "hero_titulo", widget: "string"}
-          - {label: "Subtítulo Principal (Lede)", name: "hero_descripcion", widget: "text"}
+          - {label: "Título Principal", name: "hero_titulo", widget: "string"}
+          - {label: "Descripción Principal", name: "hero_descripcion", widget: "text"}
           - {label: "Imagen de Portada", name: "hero_img", widget: "image"}
-          - {label: "Texto Botón Primario", name: "hero_btn_texto", widget: "string"}
-          - {label: "Link Botón Primario", name: "hero_btn_link", widget: "string"}
-          - {label: "Texto Botón Secundario", name: "hero_btn2_texto", widget: "string"}
-          - {label: "Link Botón Secundario", name: "hero_btn2_link", widget: "string"}
-          
-          # --- SECCIÓN DIAGNÓSTICO (KPIS) ---
+          - {label: "Texto Botón 1", name: "hero_btn_texto", widget: "string"}
+          - {label: "Link Botón 1", name: "hero_btn_link", widget: "string"}
+          - {label: "Texto Botón 2", name: "hero_btn2_texto", widget: "string"}
+          - {label: "Link Botón 2", name: "hero_btn2_link", widget: "string"}
           - label: "Indicadores de Impacto (KPIs)"
             name: "kpis"
             widget: "list"
             fields:
-              - {label: "Valor (Ej. 500+)", name: "valor", widget: "string"}
+              - {label: "Valor", name: "valor", widget: "string"}
               - {label: "Descripción", name: "desc", widget: "string"}
-          
-          # --- SECCIÓN NOSOTROS (MV) ---
           - {label: "Texto Visión/Misión", name: "nosotros_texto", widget: "text"}
-          
-          # --- SECCIÓN ALIADOS ---
-          - label: "Logos de Aliados Estratégicos"
+          - label: "Logos de Aliados"
             name: "aliados"
             widget: "list"
             fields:
@@ -57,7 +50,7 @@ collections:
             widget: "list"
             fields:
               - {label: "Título", name: "title", widget: "string"}
-              - {label: "Categoría (Ej. CEDAR o CONECTA)", name: "categoria", widget: "string"}
+              - {label: "Categoría", name: "categoria", widget: "string"}
               - {label: "Descripción Corta", name: "descripcion", widget: "text"}
               - {label: "Imagen", name: "imagen", widget: "image"}
-              - {label: "Enlace (Botón Leer más)", name: "enlace", widget: "string"}
+              - {label: "Enlace", name: "enlace", widget: "string"}

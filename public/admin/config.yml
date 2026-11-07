@@ -1,17 +1,63 @@
 backend:
   name: github
   repo: mathiasadriano/Landing-SHAMUY 
-  branch: main 
-media_folder: "images/uploads" 
+  branch: main
+  base_url: /
+  auth_endpoint: auth
+
+media_folder: "public/images/uploads"
 public_folder: "/images/uploads"
+
 collections:
+  - name: "configuracion_web"
+    label: "Configuración y Secciones Fijas"
+    files:
+      - label: "Página Principal (Textos Base)"
+        name: "inicio"
+        file: "public/contenido.json"
+        fields:
+          # --- SECCIÓN HERO ---
+          - {label: "Tagline", name: "hero_tagline", widget: "string"}
+          - {label: "Título Principal (Hero)", name: "hero_titulo", widget: "string"}
+          - {label: "Subtítulo Principal (Lede)", name: "hero_descripcion", widget: "text"}
+          - {label: "Imagen de Portada", name: "hero_img", widget: "image"}
+          - {label: "Texto Botón Primario", name: "hero_btn_texto", widget: "string"}
+          - {label: "Link Botón Primario", name: "hero_btn_link", widget: "string"}
+          - {label: "Texto Botón Secundario", name: "hero_btn2_texto", widget: "string"}
+          - {label: "Link Botón Secundario", name: "hero_btn2_link", widget: "string"}
+          
+          # --- SECCIÓN DIAGNÓSTICO (KPIS) ---
+          - label: "Indicadores de Impacto (KPIs)"
+            name: "kpis"
+            widget: "list"
+            fields:
+              - {label: "Valor (Ej. 500+)", name: "valor", widget: "string"}
+              - {label: "Descripción", name: "desc", widget: "string"}
+          
+          # --- SECCIÓN NOSOTROS (MV) ---
+          - {label: "Texto Visión/Misión", name: "nosotros_texto", widget: "text"}
+          
+          # --- SECCIÓN ALIADOS ---
+          - label: "Logos de Aliados Estratégicos"
+            name: "aliados"
+            widget: "list"
+            fields:
+              - {label: "Nombre del Aliado", name: "nombre", widget: "string"}
+              - {label: "Logo", name: "logo", widget: "image"}
+
   - name: "noticias"
     label: "Noticias y Proyectos"
-    folder: "noticias" 
-    create: true
-    extension: "json" 
-    fields:
-      - {label: "Título", name: "title", widget: "string"}
-      - {label: "Categoría", name: "categoria", widget: "string"}
-      - {label: "Descripción", name: "descripcion", widget: "text"}
-      - {label: "Imagen", name: "imagen", widget: "image"}
+    files:
+      - label: "Lista de Noticias"
+        name: "lista_noticias"
+        file: "public/noticias.json" 
+        fields:
+          - label: "Noticias Publicadas"
+            name: "items"
+            widget: "list"
+            fields:
+              - {label: "Título", name: "title", widget: "string"}
+              - {label: "Categoría (Ej. CEDAR o CONECTA)", name: "categoria", widget: "string"}
+              - {label: "Descripción Corta", name: "descripcion", widget: "text"}
+              - {label: "Imagen", name: "imagen", widget: "image"}
+              - {label: "Enlace (Botón Leer más)", name: "enlace", widget: "string"}

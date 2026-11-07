@@ -1,0 +1,20 @@
+{
+    "hero_tagline": "¡Juntos lo hacemos!",
+    "hero_titulo": "Desarrollo que nace del territorio",
+    "hero_descripcion": "Somos una fundación territorial de la región San Martín. Articulamos a comunidades, instituciones públicas, empresas y academia para impulsar el desarrollo sostenible desde las capacidades locales.",
+    "hero_img": "/images/uploads/portada-shamuy.jpg",
+    "hero_btn_texto": "Conoce SHAMUY",
+    "hero_btn_link": "#/nosotros",
+    "hero_btn2_texto": "Explora nuestros proyectos",
+    "hero_btn2_link": "#/proyectos",
+    "nosotros_texto": "Somos una organización sin fines de lucro que cree en el poder del trabajo en red y el desarrollo comunitario integral.",
+    "kpis": [
+      {"valor": "500+", "desc": "Niños, niñas y adolescentes impactados"},
+      {"valor": "10", "desc": "Provincias de alcance en la región"},
+      {"valor": "50+", "desc": "Alianzas estratégicas construidas"},
+      {"valor": "S/250k", "desc": "Fondos movilizados para iniciativas"}
+    ],
+    "aliados": [
+      {"nombre": "Aliado 1", "logo": "https://placehold.co/150x80/FFF/333?text=Logo+Aliado"}
+    ]
+  }

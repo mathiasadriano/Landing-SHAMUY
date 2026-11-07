@@ -1,1 +1,17 @@
-
+backend:
+  name: github
+  repo: mathiasadriano/Landing-SHAMUY 
+  branch: main 
+media_folder: "images/uploads" 
+public_folder: "/images/uploads"
+collections:
+  - name: "noticias"
+    label: "Noticias y Proyectos"
+    folder: "noticias" 
+    create: true
+    extension: "json" 
+    fields:
+      - {label: "Título", name: "title", widget: "string"}
+      - {label: "Categoría", name: "categoria", widget: "string"}
+      - {label: "Descripción", name: "descripcion", widget: "text"}
+      - {label: "Imagen", name: "imagen", widget: "image"}

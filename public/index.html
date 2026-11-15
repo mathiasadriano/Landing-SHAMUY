@@ -460,9 +460,9 @@ if(mainNav){
     <li class="has-drop">
       <a href="#/soluciones">Soluciones</a>
       <div class="dropdown">
-        <a href="#/soluciones/cedar"><span>3.1. Cedar SHAMUY</span><span>→</span></a>
-        <a href="#/soluciones/conecta"><span>3.2. Conecta</span><span>→</span></a>
-        <a href="#/soluciones/emergencia"><span>3.3. Fondo de Emergencia</span><span>→</span></a>
+        <a href="#/soluciones/cedar"><span>Cedar SHAMUY</span><span>→</span></a>
+        <a href="#/soluciones/conecta"><span>Conecta</span><span>→</span></a>
+        <a href="#/soluciones/emergencia"><span>Fondo de Emergencia</span><span>→</span></a>
       </div>
     </li>
     <li><a href="#/impacto">Impacto</a></li>
@@ -470,17 +470,13 @@ if(mainNav){
     <li><a href="#/noticias">Noticias</a></li>
     <li><a href="#/contacto">Contacto</a></li>
     <li class="mobile-only-cta" style="display:none"><a href="#/dona">❤️ Dona</a></li>
-    <li class="mobile-only-cta" style="display:none"><a href="#/sumate">🤝 Súmate</a></li>
   </ul>`;
 }
-const oldHeaderBtn = document.querySelector('.head > a.btn');
+const oldHeaderBtn = document.querySelector('.head > a.btn, .head > .head-ctas');
 if(oldHeaderBtn){
   const ctaWrap = document.createElement('div');
   ctaWrap.className = 'head-ctas';
-  ctaWrap.innerHTML = `
-    <a class="btn btn-dona btn-sm" href="#/dona">Dona</a>
-    <a class="btn btn-main btn-sm" href="#/sumate">Súmate</a>
-  `;
+  ctaWrap.innerHTML = `<a class="btn btn-dona btn-sm" href="#/dona">Dona</a>`;
   oldHeaderBtn.replaceWith(ctaWrap);
 }
 
@@ -566,7 +562,7 @@ function home(){return `
    <div class="tagline">¡Juntos lo hacemos!</div>
    <h1>Desarrollo que nace del territorio</h1>
    <p class="lede">Somos una fundación territorial de la región San Martín. Articulamos a comunidades, instituciones públicas, empresas y academia para impulsar el desarrollo sostenible desde las capacidades locales.</p>
-   <div class="actions"><a class="btn btn-main" href="#/soluciones">Explora nuestras soluciones</a><a class="btn btn-dona" href="#/dona">Dona ahora</a><a class="btn btn-line" href="#/sumate">Súmate</a></div>
+   <div class="actions"><a class="btn btn-main" href="#/soluciones">Explora nuestras soluciones</a><a class="btn btn-dona" href="#/dona">Dona ahora</a></div>
   </div>${photo('hero','Niñas y niños juegan fútbol en una cancha de una comunidad del río Mayo')}</div></section>
 
  <section style="padding-top:0"><div class="wrap grid-2">
